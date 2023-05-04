@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>More Than Wood | Form</title>
+    <style>
+        form {
+            margin: 0px;
+            padding: 15px;
+        }
+
+        #container-fluid {
+            margin: 0;
+            padding: 50px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <img src="./images/logo.jpg" alt="morethanwood" height="100px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#furniture">Furniture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./mattresses.html" target="_self">Mattresses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./form.html" style="color:red">Book now!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-img">
+        <div class="container-fluid col-12">
+            <div class="form">
+
+                <div class="col-lg-10 col-md-4">
+                    <form class="row g-3 needs-validation" name="f1" method="get" onsubmit="fun()">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="fname" required pattern="[A-Za-z]{3,20}"
+                                placeholder="enter your firstname">
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lname" required pattern="[A-Za-z]{3,20}"
+                                placeholder="enter your lastname">
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Mail id</label>
+                            <div class="input-group has-validation">
+                                <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+                                    required placeholder="enter your email id">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">Password</label>
+
+                            <div class="input-group has-validation">
+                                <input type="password" class="form-control" id="password"
+                                    aria-describedby="inputGroupPrepend" required pattern="[a-zA-Z0-9!@#$%^&*]{7,15}"
+                                    placeholder="enter your password">
+
+                            </div>
+                            <small> <i>Your password must be a combination of numeric, uppercase, lowercase and special
+                                    characters.</i></small>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" required pattern="[A-Za-z]{3,20}"
+                                placeholder="enter your city">
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationTextarea" class="form-label">Address</label>
+                            <textarea class="form-control" id="validationTextarea"
+                                placeholder="Enter your present residential address." required></textarea>
+
+                        </div>
+                        <div class="col-md-3">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                                <option selected>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chhattisgarh</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jammu and Kashmir</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>West Bengal</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="pincode">Pincode</label>
+                            <input type="tel" class="form-control" id="pincode" pattern="[0-9]{6}" required
+                                placeholder="enter pincode">
+
+                        </div>
+                        <div class="col-md-3">
+                            <label for="mobileno" class="form-label">Mobile no</label>
+                            <input type="tel" class="form-control" id="mobileno" required
+                                placeholder="Enter your Mobile no" pattern="[0-9]{10}">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-6 col-md-6">
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="male"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="female"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="orderno">Order Number</label>
+                                <input type="text" class="form-control" id="orderno" required
+                                    pattern="^[A-Z].{2}[0-9].{2}" placeholder="enter order no">
+                            </div>
+                            <br>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="reset" class="btn btn-primary">Clear form</button>
+                                <button class="btn btn-primary" type="submit" id="myBtn">Submit form</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <section id="contact" style="background-color:rgb(225, 222, 222);" height="70vh">
+        <div class="row">
+            <div class="col-lg-12 col-md-6">
+                <br>
+                <h3 style="text-align: center;">Follow us @</h3><br>
+                <img src="./images/icons8-facebook-50.png" alt="facebook">&ensp;&emsp;
+                <img src="./images/icons8-instagram-50.png" alt="instagram">&emsp;&emsp;
+                <img src="./images/icons8-twitter-50.png" alt="youtube">&ensp;&emsp;
+                <img src="./images/icons8-youtube-50.png" alt="twitter">
+                <br>
+                <br>
+                <br>
+                <h3 style="text-align: center;">Contact</h3>
+                <br>
+                <p>Email :&ensp;<a href="mailto:morethanwood@gmail.com">morethanwood@gmail.com</a></p>
+                <br>
+                <hr>
+                <p id="cp">Designed and Maintained by PRATHIKSHA</p>
+            </div>
+        </div>
+    </section>
+    <script src="./form.js"></script>
+</body>
+
+</html>

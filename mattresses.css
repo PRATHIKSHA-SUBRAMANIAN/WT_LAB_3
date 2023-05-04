@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Poppins' , sans-serif ;
+
+}
+#navbar{
+    background-color: rgb(255, 254, 254);
+}
+.logo{
+    align-items: center;
+
+}
+#home {
+    background-image: url("https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-color: #cccccc;
+    background-position:center;
+    height:fit-content;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    text-align:right;
+    position:relative;
+    top: 5%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#b1{
+    text-align:right;
+    position:relative;
+    top: 3%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+#dot{
+    color: red;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+section{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------Navbar--------- */
+
+.bold{
+    font-weight:bolder;
+    font-style:oblique;
+    color:black;
+    font-size: 30px;
+}
+
+li{
+    padding:6px;
+}
+
+.nav-link{
+    font-size:15px;
+    font-weight: bold;
+    border:2px solid transparent;
+
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid rgb(119, 119, 159);
+    transition: .1s;
+}
+
+/* home */
+p{
+    font-size:medium;
+    text-align: justify;
+}
+
+#home img{
+    width:max-content;
+    height:auto;
+}
+
+/* About */
+#about img{
+    width:700px;
+    height:fit-content;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: lighter;
+}
+h2{
+    text-align: center;
+
+}
+/* cards */
+
+.card img{
+    height:250px;
+    
+}
+
+.inner{
+    overflow:hidden;
+}
+.card-img-top{
+    width: 250px;
+    height: 250px;
+}
+.card img:hover{
+    transform:scale(1.0);
+    transition: 1s;
+}
+.card-title{
+    font-size: small;
+}
+#cp{
+    text-align: center;
+    color:black;
+}
+/* mattress */
+#top{
+    margin: 0;
+    padding: 5px;
+
+}
